@@ -1,6 +1,13 @@
-public class BubbleSort<T> {
+public class MergeSort<T extends Comparable<T>> {
     // Sort in ascending order
-    public static <T extends Comparable<T>> mergeSort(T[] arr){
+    public static void mergeSort(T[] arr){
+        if(arr.length > 1){
+
+        }
         
+    }
+
+    public static void merge(T[] arr, T[] left, T[] right){
+
     }
 }
