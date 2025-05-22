@@ -1,6 +1,6 @@
-public class SelectionSort<T> {
+public class SelectionSort<T extends Comparable<T>> {
     // Sort in ascending order
-    public static <T extends Comparable<T>> selectionSort(T[] arr){
+    public static void selectionSort(T[] arr){
         for(int i = 0; i < arr.size() - 1; i++){
             int minIndex = i;
             for(int j = i + 1; j < arr.size(); j++){

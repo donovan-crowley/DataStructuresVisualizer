@@ -1,6 +1,6 @@
-public class InsertionSort<T> {
+public class InsertionSort<T extends Comparable<T>> {
     // Sort in ascending order
-    public static <T extends Comparable<T>> insertionSort(T[] arr){
+    public static void insertionSort(T[] arr){
         for(int i = 1; i < arr.size(); i++){
             T key = arr[i];
             int j = i - 1;

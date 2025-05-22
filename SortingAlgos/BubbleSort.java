@@ -1,6 +1,6 @@
-public class BubbleSort<T> {
+public class BubbleSort<T extends Comparable<T>> {
     // Sort in ascending order
-    public static <T extends Comparable<T>> bubbleSort(T[] arr){
+    public static void bubbleSort(T[] arr){
         boolean swap;
         for(int i = 0; i < arr.size() - 1; i++){
             swap = false;
@@ -19,7 +19,4 @@ public class BubbleSort<T> {
             }
         }
     }
-
-
-
 }
