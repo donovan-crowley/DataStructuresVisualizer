@@ -7,7 +7,7 @@ public class BubbleSort<T> {
             for(int j = 0; j < arr.size() - i - 1; j++){
                 // arr[j] > arr[j + 1]
                 if(arr[j].compareTo(arr[j + 1]) > 0){
-                    int temp = arr[j]
+                    T temp = arr[j]
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                     swap = true;
