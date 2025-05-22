@@ -14,7 +14,7 @@ public class MergeSort<T extends Comparable<T>> {
         }
     }
 
-    public static void merge(T[] arr, int start, int mid, int end){
+    private static void merge(T[] arr, int start, int mid, int end){
         T[] leftArray = (T[]) new Comparable[mid - start + 1];
         T[] rightArray = (T[]) new Comparable[end - mid];
 
